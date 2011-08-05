@@ -30,8 +30,13 @@ module Liquid
     end
 
     def escape_once(input)
-      ActionView::Helpers::TagHelper.escape_once(input) rescue input
+      begin
+        ActionView::Base.new.escape_once(input)
+      rescue NameError
+        input
+      end
     end
+    
     
     alias_method :h, :escape
     
