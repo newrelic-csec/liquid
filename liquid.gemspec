@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.version = "2.0.1.newrelic"
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tobias Luetke"]
-  s.date = %q{2009-04-13}
+  s.date = %q{2012-02-29}
   s.description = %q{A secure non evaling end user template engine with aesthetic markup.}
   s.email = %q{tobi@leetsoft.com}
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.txt"]
